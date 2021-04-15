@@ -1,0 +1,79 @@
+*{
+    color:maroon;
+}
+
+/*Background color*/
+body{
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        background-color: grey;
+    }
+}
+
+html{
+    font-family: 'New Tegomin', serif;
+}
+
+.title{
+    text-align: center;
+}
+
+#FV{
+    text-align: center;
+}
+
+h2{
+    font-size: 1ch;
+    line-height: 1cm;
+    position: relative;
+
+}
+
+h3{
+    font-size: 5mm;
+    line-height: 1in;
+    color:chocolate
+}
+
+img{
+    position: relative;
+    top: 5px;
+    bottom: 50px;
+}
+
+[class*="subtitle"] {
+    background: yellow;
+}
+
+details summary{
+    background-color: aquamarine;
+}
+
+footer >span{
+    background-color: coral;
+}
+
+label ~ input{
+    background-color:grey;
+}
+
+br + a{
+    text-align: center;
+    background-color:peru;
+}
+
+h3.summary{
+    background-color:darkseagreen;
+}
+
+button:hover{
+    color:coral;
+}
+
+a:active{
+    font-size: 10ex;
+    line-height: 1em;
+}
