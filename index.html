@@ -6,21 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal Entries</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            color:black;
+        }
+
+        span, div {
+            margin-top:10px;
+            margin: bottom 10px;
+            margin-left: 10px;
+            margin-right: auto;
+            display: block;
+        }
+
+        li{
+            padding-left: 10px;
+            padding: top 10px;
+            border-style:none;
+            border-color:thistle;
+            border-width: 1px;
+            border-radius: 1pc;
+        }
+
+        ol{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+
+        ul{
+            max-width: 2000pc;
+            max-height: 2000pc;
+            display: flex;
+            flex-direction:column-reverse;
+        }
+
+        audio{
+            width: 20pc;
+            height: 5pc;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+        }
+
+        fieldset{
+            display: grid;
+            grid-template-columns: 50pc;
+            grid-template-rows: 5pc;
+            gap: 15px 10px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-    <h1>Journal Entries #RemoteLearning #Timezone</h1>
+    <h1 class = "title">Journal Entries #RemoteLearning #Timezone</h1>
     <nav>
         <ul>
-          <li><a href="#Day%201">Day 1</a></li>
-          <li><a href="#Day%202">Day 2</a></li>
-          <li><a href="#Day%203">Day 3</a></li>
+          <li style="color:rgb(57, 233, 21)"><a href="#Day%201">Day 1</a></li>
+          <li style="color: #420420"><a href="#Day%202">Day 2</a></li>
+          <li style="color:hsl(0, 100%, 50%)"><a href="#Day%203">Day 3</a></li>
         </ul>
     </nav>
     </header>
 
 <main>
-    <h1>Surviving week 2</h1>
+    <h1 style="display: none;">Surviving week 2</h1>
     <img
       src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/23151016/origin.png"
       alt="Filled the dog with Helium"
@@ -28,14 +85,14 @@
     />
 
 <section>
-    <h2 id="Day%201">Day 1: 2020.4.5</h2>
-    <h3>Summary: stayed up way to late for OH, getting sick the next day</h3>
+    <h2 id="Day%201" style="color:blue;text-align:left">Day 1: 2020.4.5</h2>
+    <h3 class="summary">Summary: stayed up way to late for OH, getting sick the next day</h3>
     <img
             src = "https://i.pinimg.com/originals/e8/df/08/e8df081a36c6a0696e1b0930aeca4084.jpg"
             alt = "Sick cat"
             width = "200"
     >
-    <div><b>Completed items</b></div>
+    <div class="subtitle"><b>Completed items</b></div>
     <br>
     <ul>
         <li>Finish up HW1 for ECE111</li>
@@ -49,14 +106,14 @@
 
 <section>
     <h2 id="Day%202">Day 2: 2020.4.6</h2>
-    <h3>Summary: Feeling so much better after a good night sleep; food tastes good again😀</h3>
+    <h3 class="summary">Summary: Feeling so much better after a good night sleep; food tastes good again😀</h3>
     <img
             src = "https://www.memecreator.org/static/images/memes/4005186.jpg"
             alt = "I'm healed"
             width = "200"
     >
     <br>
-    <span><b>Things I did</b></span>
+    <span class="subtitle"><b>Things I did</b></span>
     <ol>
         <li>Q&A for quiz 1</li>
         <li>A nice brunch😋</li>
@@ -70,14 +127,14 @@
 
 <section>
     <h2 id="Day%203">Day 3: 2020.4.7</h2>
-    <h3>Summary: A day of peace before HWs, Labs and Projects start to pile up</h3>
+    <h3 class="summary">Summary: A day of peace before HWs, Labs and Projects start to pile up</h3>
     <img
             src = "https://i.pinimg.com/474x/f3/79/0f/f3790faa3915c7ffd28fa171ddc97014.jpg"
             alt = "Stressed cat"
             width = "200"
     >
-    <details>
-        <summary>A day of goofing around</summary>
+    <details style="color:yellowgreen;text-align: center;">
+        <summary style="color:brown;text-decoration: underline;">A day of goofing around</summary>
         Woke up later than usual today, probably has to do with the fact that
         I tend to think too much before I sleep.<br>It's <b>Wednesway</b>, this means
         it's time to <strong>clean</strong> before I do anything else. Since it's
@@ -98,7 +155,7 @@
         </audio>
         <br>
         <a href="https://t2wang.github.io/CSE110-Lab1/">My User Page<br></a>
-        <p>Funny Video</p>
+        <p id="FV">Funny Video</p>
         <iframe width="420" height="315"
         src="https://www.youtube.com/embed/X5okHtqNWb0">
         </iframe>
@@ -130,7 +187,7 @@
                 <option value="Sunday">
                 </datalist><br>
 
-                <label for="identity">Who you are:</label>
+                <label for="identity">Who are you:</label>
 
                 <select name="identity" id="identity">
                 <option value="Good guy">Good guy</option>
